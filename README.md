@@ -2,17 +2,17 @@
 a standard schema for redirect urls for various debug applications used by developers that can be shared across teams
 
 
-Schema for redirect urls for various developer applications and user interfaces
-the schema is as follows
-For now consider a yo link
-yo/<monitoring system name.sub component.subsubcomponent>-<logtype.sublogtype>-<app name.sub app name.sub sub app name>-<environment>
-all the above values in the <> brackets are mandatory and defaults cannot be assumed for clarity and portability
+# Schema for redirect urls for various developer applications and user interfaces
+**the schema is as follows**
+* For now consider a yo link
+  * yo/<monitoring system name.sub component.subsubcomponent>-<logtype.sublogtype>-<app name.sub app name.sub sub app name>-<environment>
+  * all the above values in the <> brackets are mandatory and defaults cannot be assumed for clarity and portability
 reserved keywords (which cannot be used by the user using this schema) are
-`-` used to separate entities
-`.` used to add granularity to app specific details
-possible values user can enter. No other set of characters is allowed other than the mentioned set. This strict adherence to a given character set makes things simple and clear
-[a-z][0-9][.]
-use  `_` if the names get too long and difficult to read but avoid as much as possible as the idea is to be simple, clear and precise
+  * `-` used to separate entities
+  * `.` used to add granularity to app specific details
+  * possible values user can enter. No other set of characters is allowed other than the mentioned set. This strict adherence to a given character set makes things simple and clear
+  * [a-z][0-9][.]
+  * use  `_` if the names get too long and difficult to read but avoid as much as possible as the idea is to be simple, clear and precise
 While writing sub app names only [a-z][0-9] set is to used
 the given examples uses the yo links
 yo/splunk-access-picknroll-dev
