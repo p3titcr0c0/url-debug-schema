@@ -5,7 +5,7 @@ a standard schema for redirect urls for various debug applications used by devel
 # Schema for redirect urls for various developer applications and user interfaces
 **the schema is as follows**
 * For now consider a yo link
-  * yo/<monitoring system name.sub component.subsubcomponent>-<logtype.sublogtype>-<app name.sub app name.sub sub app name>-<environment>
+  *  yo/<monitoring system name.sub component.subsubcomponent>-<logtype.sublogtype>-<app name.sub app name.sub sub app name>-<environment>
   * all the above values in the <> brackets are mandatory and defaults cannot be assumed for clarity and portability
 reserved keywords (which cannot be used by the user using this schema) are
   * `-` used to separate entities
