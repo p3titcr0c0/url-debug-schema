@@ -1,15 +1,11 @@
 # Schema for redirect urls for various developer applications and user interfaces
 **the schema is as follows**
 * For now consider a yo link
- * `yo/
-			<monitoring system name.sub component.subsubcomponent>-
-			<logtype.sublogtype>-
-			<app name.sub app name.sub sub app name>-
-			<environment>`
+ * `yo/<monitoring system name.sub component.subsubcomponent>-<logtype.sublogtype>-<app name.sub app name.sub sub app name>-<environment>`
  * all the above values in the <> brackets are mandatory and defaults cannot be assumed for clarity and portability
 * reserved keywords (which cannot be used by the user using this schema) are
- * `-` used to separate entities
- * `.` used to add granularity to app specific details or monitoring specific details
+ - `-` used to separate entities
+ - `.` used to add granularity to app specific details or monitoring specific details
 * possible values user can enter. No other set of characters is allowed other than the mentioned set. This strict adherence to a given character set makes things simple and clear
  * `[a-z][0-9][.][ _ ]`
  * use  `_` if the names get too long and difficult to read but avoid as much as possible as the idea is to be simple, clear and precise
